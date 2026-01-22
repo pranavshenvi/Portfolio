@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!--/ /---- Put your name in the title of the page ----/ /-->
+	<title>Pranav Shenvi</title>
+	
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<!-- Add a link to google fonts here if you want them -->
+	 <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
+	<!-- <meta description="A Portfolio website to showcase the projects i have implemented"> -->
+	<meta name="description" content="Portfolio website showcasing projects in cloud computing, networking, and software development.">
+
+
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	
+    <!-- ------------------------------------------------------
+    The site is designed to be mobile first. The wrapper elements
+	are in place for when you get to desktop size to contain the 
+	content.
+    ------------------------------------------------------- -->
+    
+	<header class="primary">
+        <div class="wrapper">
+            
+			<div class="logo-container">
+				<h1>Pranav<br>Shenvi<br>Portfolio</h1>
+				<!-- <h1>Your<br>Name<br>Portfolio</h1> -->
+
+				<!-- ------------------------------------------------------
+				Note that the image of the logo is linked to the home page.
+				------------------------------------------------------- -->
+				<img src="images/pranav.jpg" alt="Pranav Shenvi Logo" id="logo">
+
+				<!-- <a href="index.html"><img src="https://dummyimage.com/175/c4c4c4/fff&text=logo" alt="logo image" id="logo"></a> -->
+				
+			</div>
+            
+            
+			<!-- ------------------------------------------------------
+            The navigation here is linking to the sections further down
+            the page.
+            ------------------------------------------------------- -->
+			<nav id="mainnav">
+            	<ul>
+                	<li><a href="#work">Work</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                    <li><a href="#about-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    
+    <!-- ------------------------------------------------------
+    This is the work section, which has two parts: the featured
+	section and the projects section.
+    ------------------------------------------------------- -->
+    
+    <section id="work">
+   		<div class="wrapper">
+        	<h2>Check Out My Best Projects</h2>
+        	<section class="featured">
+                <article>
+                	<!-- ------------------------------------------------------
+                    Link the image below to the detail page for this project.
+                    Use the page.html file to make that page. Also link the 
+                    anchor tag in the paragraph below to the same page.
+                    ------------------------------------------------------- -->
+					<a href="project-hdfs.html">
+					<img src="images/hdfs.png" alt="Smart Traffic Optimization Project">
+					</a>
+
+                	<!-- <a href="#"><img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Featured+Project" alt="image"></a> -->
+                </article>
+                
+                <article>
+				<h3>Mini HDFS Simulation</h3>
+				<h4>Understanding Distributed Storage and Fault Tolerance</h4>
+
+				<p>
+				Designed and implemented a mini simulation of the Hadoop Distributed File
+				System (HDFS) to understand core concepts such as block-based storage,
+				NameNode DataNode architecture, replication, and fault tolerance.
+				The system simulates file splitting, metadata management, and block
+				replication across multiple nodes.
+				</p>
+
+				<p>
+				<a href="project-hdfs.html">Find out how I designed and implemented this system</a>
+				</p>
+
+                </article>
+
+			
+            </section> <!-- end row -->
+            
+            
+            <!-- ------------------------------------------------------
+            The projects section is for additional projects. I put four in
+			here, but it could be more, or less. You just have to pay
+			attention to how they wrap, and how many you want per row.
+            
+            Note that each image should be linked to the page with more
+            detailed information about that project. You can use a copy of
+            page.html to create those pages.
+            ------------------------------------------------------- -->
+            
+            <section class="projects">
+            
+            	<article>
+                	<h3>IoT Intruder Detection System</h3>
+<a href="project-iot.html">
+  <img src="images/iot-intruder.png" alt="IoT Intruder Detection System">
+</a>
+<p><strong>Role:</strong> Developer</p>
+<p><strong>Description:</strong> Arduino-based intrusion detection using motion, IR, and sound sensors with alert notifications.</p>
+
+                </article>
+                
+				<article>
+    <h3>Computer Network Music Streaming System</h3>
+    <a href="project-music-streaming.html">
+        <img src="images/music.png" alt="Computer Network Music Streaming Project">
+    </a>
+    <p><strong>Role:</strong> Developer</p>
+    <p><strong>Description:</strong> Client–server music streaming application using TCP sockets, supporting on-demand streaming, play/pause, and seek functionality without full file download.</p>
+</article>
+
+                
+<article>
+    <h3>Operation Theatre Management System</h3>
+    <a href="project-otms.html">
+        <img src="images/otms.jpg" alt="Operation Theatre Management System">
+    </a>
+    <p><strong>Role:</strong> Developer</p>
+    <p><strong>Description:</strong> Web-based system to manage operation theatre scheduling, surgeon availability, patient records, and resource allocation to improve hospital workflow efficiency.</p>
+</article>
+
+            
+            </section><!-- end row -->
+            
+        </div> <!-- end work wrapper -->
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    This is the about and contact section. The links in the main
+    navigation link to this section. 
+    ------------------------------------------------------- -->
+    
+    <section id="about-contact" class="secondary">
+   		<div class="wrapper">
+        	
+			<div class="profile-photo">
+            	<img src="images/pranav.jpg" alt="image">
+            </div>
+			
+            <article>
+				<h2>About Me</h2>
+				<p>
+I am a Computer Science undergraduate with strong interests in cloud computing,
+computer networks, and applied machine learning. I enjoy building systems that
+combine real-world data with scalable software architectures.
+</p>
+
+				<h3>Skills</h3>
+				<p>
+Cloud Computing, Computer Networks, Python, C++, REST APIs, Linux,
+Git/GitHub, Basic Machine Learning, and System Design.
+</p>
+
+			</article> 
+                
+			<article>
+				<h2>Contact Me!</h2>
+				<p>I am currently looking for opportunities to work on a team at a design shop. Please feel free to contact me by phone, email or through the usual social media channels.</p>
+
+				<!-- ------------------------------------------------------
+				Be sure to encode your email address at this site, so you 
+				don't get spam. http://wbwip.com/wbw/emailencoder.html
+				------------------------------------------------------- -->
+
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:&#115;&#104;&#101;&#110;&#118;&#105;&#112;&#114;&#097;&#110;&#097;&#118;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#104;&#101;&#110;&#118;&#105;&#112;&#114;&#097;&#110;&#097;&#118;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a><br>
+				<i class="fa fa-phone" aria-hidden="true">6366653444</i> </p>
+
+				<!-- ------------------------------------------------------
+				You can see here that I have included font-awesome. It is used
+				to create the icons above and below. You can go to the font-awesome
+				website to see the available icons and swap some out.
+				------------------------------------------------------- -->
+
+				<p class="social">
+					<a href="https://www.linkedin.com/in/shenvipranav/"><i class="fab fa-linkedin"></i></a> 
+					<a href="https://github.com/pranavshenvi"><i class="fab fa-twitter-square"></i></a>
+				</p>
+			</article>
+                   
+        </div>
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    The footer section is not doing much on this page. Add more
+    content if necessary.
+    ------------------------------------------------------- -->
+    <footer class="primary">
+    	<div class="wrapper">
+        	<p class="centered">&copy; 2019 all rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
